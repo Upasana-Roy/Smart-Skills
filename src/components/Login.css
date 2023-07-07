@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: blanchedalmond;
+    margin-top: 0%;
+}
+.backgnd{
+    margin-top: 0;
+    width: 100%;
+    align-content: end;
+    background:url('../assets/home-background.png');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img{
+    position: relative;
+}
+.Login{
+    position: absolute;
+    width: 40%;
+    margin: 5rem 25rem 5rem 25rem;
+    padding: 5rem 3rem;
+    align-content: center;
+    /* background-color:white; */
+    background-color: var(--chakra-colors-whiteAlpha-500);
+    z-index: 10;
+    border-radius: 5px;
+    /* box-shadow: 2rem;*/
+     border: 2px solid grey;
+     
+     box-shadow: 5px 5px grey;
+}
+/* .dark-mode {
+    background-color: grey;
+    color: white;
+} */
+
+.form{
+    padding: 5rem;
+    margin: auto;
+}
+
+.label{
+    font-weight: 700;
+}
+
+.btn-primary{
+    margin: 2rem 6rem;
+    border-radius: 10%;
+    background-color: #0079FF;
+}
+
+.para{
+    margin-bottom: 2rem;
+}
+
+.homeBtn{
+    margin-left: 6rem;
+}
+
+.search{
+    position: absolute;
+    width: 100%;
+    margin-top: -50rem ;
+    padding: 5rem 3rem;
+    align-content: center;
+    /* background-color:white; */
+    /* background-color: var(--chakra-colors-whiteAlpha-500); */
+    z-index: 10;
+    /* border-radius: 5px;
+    /* box-shadow: 2rem;*/
+     /* border: 2px solid grey;
+     
+     box-shadow: 5px 5px grey;; */ 
+}
