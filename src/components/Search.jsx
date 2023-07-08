@@ -9,7 +9,7 @@ import "./Login.css";
 import Scroll from './Scroll';
 import SearchList from './SearchList';
 // import SearchList2 from './SearchList2';
-// import Search2 from "./Search2";
+
 
 
 function Search({ details }) {
@@ -20,11 +20,11 @@ function Search({ details }) {
     person => {
       return (
         person
-        .name
+        .prof
         .toLowerCase()
         .includes(searchField.toLowerCase()) ||
         person
-        .email
+        .address
         .toLowerCase()
         .includes(searchField.toLowerCase())
       );
@@ -75,30 +75,24 @@ function Search({ details }) {
       </div>
       <div className="pa2">
         <input 
-          className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
+          className="pa3 bb br3 grow b--none bg-lightest-blue ma1"
           type = "search" 
-          placeholder = "Search People" 
+          placeholder = "Search Profession" 
           onChange = {handleChange}
         />
-        {/* <Search2/> */}
+        <input 
+          className="pa3 bb br3 grow b--none bg-lightest-blue ma1"
+          type = "search" 
+          placeholder = "Filter City" 
+          onChange = {handleChange}
+        />
       <Button class="homeBtn btn btn-primary btn-lg">Search</Button>
 
       </div>
 
        
       {searchList()}
-      {/* </Box>
-        <Box>
-      <div className="pa2">
-        <input 
-          className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
-          type = "search" 
-          placeholder = "Filter by city" 
-          onChange = {handleChange}
-        />
-      </div>
-      {searchList2()}
-      </Box> */}
+      
 
       </Box>
       {/* <Search2/> */}

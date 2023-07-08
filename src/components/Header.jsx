@@ -42,7 +42,7 @@ const Header = () => {
             </li> */}
             <li>
             <Button variant={"unstyled"} color={"white"} style={{ marginLeft: '1rem' }}>
-                <Link to="/login">Login</Link>
+                <Link to="/login">Login/Register</Link>
             </Button>
             </li>
             <li>

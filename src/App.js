@@ -13,6 +13,8 @@ import Register from "./components/Register";
 import GetStart from "./components/GetStart";
 import Search from "./components/Search";
 import initialDetails from './data/initialDetails';
+// import Testimonials from "./components/Testimonial";
+
 
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box,Image,} from "@chakra-ui/react";
+import { Box,Image,Text} from "@chakra-ui/react";
 import Form from "react-bootstrap/Form";
 
 import Button from "react-bootstrap/Button";
@@ -36,7 +36,8 @@ export default function Login() {
     <Box bgColor={"WhiteAlpha.700"} w={"full"} h={"120vh"}>
         <Image className="img" w={"full"} h={"full"} zIndex={"hide"} src={bgSrc} /> 
         {/* <div class="backgnd"> */}
-        <Box className="Login" mt={"-100vh"} zIndex={"overlay"}> 
+        <Box className="Login" mt={"-100vh"} zIndex={"overlay"}>
+        <Text fontSize={"3xl"} zIndices={"overlay"} fontWeight={"bold"} color={"blackAlpha.700"} mb={"5vh"}>Log In</Text> 
       <Form onSubmit={handleSubmit} class="form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
 
         <Form.Group  controlId="email" class="mb-4">
